@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  hello1:
+    build: .
+    ports:
+      - "11130:11130"
+    volumes:
+      - ./hello1.js:/usr/src/app/hello1.js
+    environment:
+      NODE_ENV: development
+      PORT: 11130

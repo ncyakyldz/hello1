@@ -1,0 +1,14 @@
+---
+replicaCount: 1
+
+image:
+  repository: gcr.io/teak-brook-339217/hello1
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 80
+
+app_port: 11130
+environment: production

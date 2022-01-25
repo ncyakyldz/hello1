@@ -1,0 +1,21 @@
+{
+  "name": "hello1",
+  "version": "1.0.0",
+  "description": "Hello app",
+  "main": "hello1.js",
+  "scripts": {
+    "start": "if [ \"$NODE_ENV\" = \"production\" ]; then npm run start:prod; else npm run start:dev; fi",
+    "start:dev": "nodemon hello1.js",
+    "start:prod": "node hello1.js"
+
+
+  },
+  "author": "Naciye Akyildiz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
